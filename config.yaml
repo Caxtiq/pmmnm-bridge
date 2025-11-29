@@ -1,0 +1,27 @@
+# API Configuration
+api:
+  endpoint: "http://localhost:3001/api/sensor-data"
+  timeout: 10s
+
+# MQTT Broker Configuration
+mqtt:
+  broker: "tcp://localhost:1883"
+  client_id: "pmmnm-bridge"
+  username: ""
+  password: ""
+  qos: 1
+  clean_session: true
+
+# Topic Mappings
+# Payload-based mode: sensor_id included in JSON payload
+# ESP32 sends: {"sensorId": "sensor-123", "value": 5.2}
+
+topics:
+  - mqtt_topic: "sensors/data"
+    sensor_id_from_payload: true
+    description: "All sensors - ID from payload"
+
+# Logging Configuration
+logging:
+  level: "info"  # debug, info, warn, error
+  format: "json"  # json or text

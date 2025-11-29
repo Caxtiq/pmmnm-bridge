@@ -1,0 +1,22 @@
+# Simple Example: One sensor, payload-based (recommended)
+api:
+  endpoint: "http://localhost:3001/api/sensor-data"
+  timeout: 10s
+
+mqtt:
+  broker: "tcp://192.168.1.100:1883"
+  client_id: "pmmnm-bridge"
+  username: ""
+  password: ""
+  qos: 1
+  clean_session: true
+
+topics:
+  # All ESP32 devices publish to "sensors/data" with sensorId in payload
+  - mqtt_topic: "sensors/data"
+    sensor_id_from_payload: true
+    description: "All sensors"
+
+logging:
+  level: "info"
+  format: "text"
