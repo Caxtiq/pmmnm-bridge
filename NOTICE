@@ -1,0 +1,43 @@
+MQTT Bridge (IoT Gateway)
+Flood and Outage Risk Management System
+Copyright 2025 PKA-OpenLD
+
+Licensed under the Apache License, Version 2.0.
+
+--------------------------------------------------------------------------------
+THIRD-PARTY SOFTWARE NOTICES
+--------------------------------------------------------------------------------
+
+This software is built using the Go programming language (Golang) and utilizes 
+the following open-source libraries. The full text of the licenses can be found 
+in the vendor directory or go.mod file.
+
+Name                Version       License       Description                                     Url
+----------------------------------------------------------------------------------------------------------------------------
+Paho MQTT Go        v1.4.3        EPL-2.0       Eclipse Paho MQTT Go Client Library             https://github.com/eclipse/paho.mqtt.golang
+Logrus              v1.9.3        MIT           Structured, pluggable logging for Go            https://github.com/sirupsen/logrus
+YAML v3             v3.0.1        MIT           YAML support for the Go language                https://gopkg.in/yaml.v3
+Gorilla WebSocket   v1.5.0        BSD-2         WebSocket implementation for Go                 https://github.com/gorilla/websocket
+Go Networking (net) v0.8.0        BSD-3         Supplementary Go networking libraries           https://golang.org/x/net
+Go Sync             v0.1.0        BSD-3         Go concurrency primitives                       https://golang.org/x/sync
+Go Sys              v0.6.0        BSD-3         Go low-level operating system primitives        https://golang.org/x/sys
+
+--------------------------------------------------------------------------------
+LICENSE DETAILS
+--------------------------------------------------------------------------------
+
+1. Eclipse Paho MQTT Go
+   Copyright (c) 2013-2018 Eclipse Foundation, Inc. and its licensors.
+   Licensed under Eclipse Public License 2.0 (EPL-2.0) and Eclipse Distribution License 1.0 (EDL-1.0).
+
+2. Logrus
+   Copyright (c) 2014 Simon Eskildsen
+   Licensed under the MIT License.
+
+3. YAML v3
+   Copyright (c) 2011-2019 Canonical Ltd
+   Licensed under the MIT License.
+
+4. Go Standard Library & Extended Packages (x/net, x/sync, x/sys)
+   Copyright (c) The Go Authors.
+   Licensed under the BSD 3-Clause License.
